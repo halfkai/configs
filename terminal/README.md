@@ -1,5 +1,7 @@
 # Unified Terminal Config
 
+run ./install.sh
+
 ## Alacritty
 
 You can find the documentation for Alacritty's configuration in man 5 alacritty, or by looking at the website if you do not have the manpages installed.
@@ -16,4 +18,4 @@ On Windows, the config file will be looked for in:
 
 ## Tmux
 
-
+1. `$HOME/.tmux.conf`

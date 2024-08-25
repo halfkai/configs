@@ -1,4 +1,4 @@
-working_directory = "~/workspace"
+working_directory = "workspace" # use relative path under your $HOME dir
 
 [shell]
 program="/bin/zsh"
@@ -6,8 +6,8 @@ args=["-l", "-c", "tmux -f ~/.tmux.conf new-session"]
 
 [window]
 opacity = 0.8
-blur = "true"
-decorations = "buttonless"
+blur = true
+decorations = "full"
 padding = {x = 5, y = 5}
 startup_mode = "Maximized"
 
