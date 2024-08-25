@@ -1,0 +1,18 @@
+working_directory = "~/workspace"
+
+[shell]
+program="/bin/zsh"
+args=["-l", "-c", "tmux -f ~/.tmux.conf new-session"]
+
+[window]
+opacity = 0.8
+blur = "true"
+decorations = "buttonless"
+padding = {x = 5, y = 5}
+startup_mode = "Maximized"
+
+[keyboard]
+bindings = [
+    { key="Q", mods="command", action="None" }, # do not exit app
+    { key="W", mods="command", action="None" }, # do not close window
+]

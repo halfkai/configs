@@ -4,12 +4,14 @@
 set_proxy() {
     networksetup -setwebproxy "$interface" "$proxy_server" "$proxy_port"
     networksetup -setsecurewebproxy "$interface" "$proxy_server" "$proxy_port"
+    echo "Webproxy set on $interface with $proxy_server:$proxy_port"
 }
 
 # Function to disable proxy
 disable_proxy() {
     networksetup -setwebproxystate "$interface" off
     networksetup -setsecurewebproxystate "$interface" off
+    echo "Webproxy disabled on $interface"
 }
 
 # Set your interface name
